@@ -8,14 +8,20 @@ Normative behavior lives in the **[protocol spec](https://github.com/fetchurl/sp
 
 ## Repositories
 
-| Repository | What it is |
-|------------|------------|
-| **[spec](https://github.com/fetchurl/spec)** | Normative protocol (`SPEC.md`), versioned independently |
-| **[fetchurl](https://github.com/fetchurl/fetchurl)** | Reference **server & CLI** (Go), container image |
-| **[sdk-js](https://github.com/fetchurl/sdk-js)** | JavaScript / TypeScript client (`fetchurl-sdk`) |
-| **[sdk-python](https://github.com/fetchurl/sdk-python)** | Python client (`fetchurl-sdk`) |
-| **[sdk-rust](https://github.com/fetchurl/sdk-rust)** | Rust client (`fetchurl-sdk`) |
-| **[sdk-java](https://github.com/fetchurl/sdk-java)** | Java client (`io.github.fetchurl:fetchurl-sdk`) |
+### Protocol
+
+- **[spec](https://github.com/fetchurl/spec)** — normative protocol (`SPEC.md`), versioned independently
+
+### Server
+
+- **[fetchurl](https://github.com/fetchurl/fetchurl)** — reference server & CLI (Go), container image `ghcr.io/fetchurl/fetchurl`
+
+### SDKs
+
+- **[sdk-js](https://github.com/fetchurl/sdk-js)** — JavaScript / TypeScript (`fetchurl-sdk`)
+- **[sdk-python](https://github.com/fetchurl/sdk-python)** — Python (`fetchurl-sdk`)
+- **[sdk-rust](https://github.com/fetchurl/sdk-rust)** — Rust (`fetchurl-sdk`)
+- **[sdk-java](https://github.com/fetchurl/sdk-java)** — Java (`io.github.fetchurl:fetchurl-sdk`)
 
 ## Quick orientation
 
