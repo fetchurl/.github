@@ -25,17 +25,34 @@ Normative behavior lives in the **[protocol spec](https://github.com/fetchurl/sp
 
 ## Quick orientation
 
-```text
-                    ┌─────────────┐
-                    │    spec     │  protocol only
-                    └──────┬──────┘
-           implements / speaks protocol
-     ┌─────────────────┼─────────────────┐
-     ▼                 ▼                 ▼
-┌──────────┐    ┌────────────┐    ┌────────────┐
-│ fetchurl │    │  sdk-js    │    │ sdk-python │  …
-│ (server) │    │  (npm)     │    │  (PyPI)    │
-└──────────┘    └────────────┘    └────────────┘
+```mermaid
+flowchart TB
+  spec["spec<br/>protocol only"]
+
+  subgraph implementations["implements / speaks protocol"]
+    direction LR
+    server["fetchurl<br/>server &amp; CLI"]
+    subgraph sdks["SDKs"]
+      direction LR
+      js["sdk-js"]
+      py["sdk-python"]
+      rs["sdk-rust"]
+      java["sdk-java"]
+    end
+  end
+
+  spec --> server
+  spec --> js
+  spec --> py
+  spec --> rs
+  spec --> java
+
+  click spec "https://github.com/fetchurl/spec"
+  click server "https://github.com/fetchurl/fetchurl"
+  click js "https://github.com/fetchurl/sdk-js"
+  click py "https://github.com/fetchurl/sdk-python"
+  click rs "https://github.com/fetchurl/sdk-rust"
+  click java "https://github.com/fetchurl/sdk-java"
 ```
 
 - **Run a cache:** [fetchurl/fetchurl](https://github.com/fetchurl/fetchurl) — image `ghcr.io/fetchurl/fetchurl`
