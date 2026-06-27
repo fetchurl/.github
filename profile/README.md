@@ -15,6 +15,7 @@ Normative behavior lives in the **[protocol spec](https://github.com/fetchurl/sp
 | **[sdk-js](https://github.com/fetchurl/sdk-js)** | JavaScript / TypeScript client (`fetchurl-sdk`) |
 | **[sdk-python](https://github.com/fetchurl/sdk-python)** | Python client (`fetchurl-sdk`) |
 | **[sdk-rust](https://github.com/fetchurl/sdk-rust)** | Rust client (`fetchurl-sdk`) |
+| **[sdk-java](https://github.com/fetchurl/sdk-java)** | Java client (`io.github.fetchurl:fetchurl-sdk`) |
 
 ## Quick orientation
 
