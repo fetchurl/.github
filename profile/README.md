@@ -23,6 +23,10 @@ Normative behavior lives in the **[protocol spec](https://github.com/fetchurl/sp
 - **[sdk-rust](https://github.com/fetchurl/sdk-rust)** — Rust (`fetchurl-sdk`)
 - **[sdk-java](https://github.com/fetchurl/sdk-java)** — Java (`io.github.fetchurl:fetchurl-sdk`)
 
+### Documentation
+
+- **[fetchurl.github.io](https://github.com/fetchurl/fetchurl.github.io)** — project docs site ([fetchurl.github.io](https://fetchurl.github.io))
+
 ## Quick orientation
 
 ```mermaid
@@ -55,6 +59,7 @@ flowchart TB
   click java "https://github.com/fetchurl/sdk-java"
 ```
 
+- **Read the docs:** [fetchurl.github.io](https://fetchurl.github.io) — getting started, protocol, server, SDKs
 - **Run a cache:** [fetchurl/fetchurl](https://github.com/fetchurl/fetchurl) — image `ghcr.io/fetchurl/fetchurl`
 - **Wire a client:** set `FETCHURL_SERVER` to the server base URL (ready to append `/:algo/:hash`); see [spec](https://github.com/fetchurl/spec/blob/main/SPEC.md)
 - **Propose protocol changes:** issues/PRs on [spec](https://github.com/fetchurl/spec)
@@ -62,5 +67,6 @@ flowchart TB
 
 ## Links
 
+- Docs: [fetchurl.github.io](https://fetchurl.github.io)
 - Protocol: [fetchurl/spec](https://github.com/fetchurl/spec)
 - Org: [github.com/fetchurl](https://github.com/fetchurl)
