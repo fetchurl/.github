@@ -1,0 +1,67 @@
+name: Bug report
+description: Report unexpected behavior in the protocol, server/CLI, an SDK, or docs.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this issue on the **repository that owns the bug** (protocol → [spec](https://github.com/fetchurl/spec), server/CLI → [fetchurl](https://github.com/fetchurl/fetchurl), clients → the matching `sdk-*` repo, site → [fetchurl.github.io](https://github.com/fetchurl/fetchurl.github.io)).
+
+        **Security-sensitive findings:** do **not** use this form. Prefer private vulnerability reporting on the affected repo, or email `lucas@lew.tec.br` with subject `[fetchurl security]`.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which surface is broken? (Helps maintainers confirm you are in the right repo.)
+      options:
+        - Protocol (spec / wire format / headers / env vars)
+        - Reference server or CLI (fetchurl)
+        - JavaScript / TypeScript SDK (sdk-js)
+        - Python SDK (sdk-python)
+        - Rust SDK (sdk-rust)
+        - Java SDK (sdk-java)
+        - Docs site (fetchurl.github.io)
+        - Org defaults (.github) / other
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Package version, git commit, or container tag (`ghcr.io/fetchurl/fetchurl:…`).
+      placeholder: e.g. v0.1.0 or abc1234
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Expected vs actual behavior. Include minimal steps to reproduce.
+      placeholder: |
+        Expected: …
+        Actual: …
+        Steps:
+        1. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, language runtime, how the server was run (binary, container), and `FETCHURL_SERVER` if relevant.
+      placeholder: e.g. Linux, Go 1.22, container image ghcr.io/fetchurl/fetchurl:…
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: Relevant logs, responses, or stack traces (auto-formatted as code).
+      render: shell
+    validations:
+      required: false

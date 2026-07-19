@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://fetchurl.github.io
+    about: Protocol overview and usage docs — check here before filing a usage question.
+  - name: Protocol specification
+    url: https://github.com/fetchurl/spec
+    about: Normative protocol behavior lives in fetchurl/spec (SPEC.md).
+  - name: Security vulnerability
+    url: https://github.com/fetchurl/fetchurl/security/advisories/new
+    about: Do not open a public issue. Prefer private reporting on the affected repo (example uses the server repo); email lucas@lew.tec.br if needed.
