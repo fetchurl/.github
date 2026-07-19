@@ -1,3 +1,6 @@
 # fetchurl/.github
 
-Holds the **[organization profile README](./profile/README.md)** (shown on [github.com/fetchurl](https://github.com/fetchurl)) and any future org-wide community health files.
+Organization defaults for [github.com/fetchurl](https://github.com/fetchurl):
+
+- **[profile/README.md](./profile/README.md)** — organization profile README
+- **[SECURITY.md](./SECURITY.md)** — default vulnerability reporting policy for org repositories that do not define their own
