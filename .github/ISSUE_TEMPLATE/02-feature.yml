@@ -1,0 +1,49 @@
+name: Feature or protocol proposal
+description: Propose a change or new capability for the protocol, server, SDKs, or docs.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Protocol semantics** (wire format, headers, env vars, versioning) belong on [fetchurl/spec](https://github.com/fetchurl/spec). Implementation features belong on the server or the relevant SDK repo.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Where should this land if accepted?
+      options:
+        - Protocol (spec)
+        - Reference server or CLI (fetchurl)
+        - JavaScript / TypeScript SDK (sdk-js)
+        - Python SDK (sdk-python)
+        - Rust SDK (sdk-rust)
+        - Java SDK (sdk-java)
+        - Docs site (fetchurl.github.io)
+        - Org defaults (.github) / other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do that is hard or impossible today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What change do you want? Keep it concrete. For protocol work, note impact on existing clients/servers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds or other designs you already rejected (optional).
+    validations:
+      required: false
