@@ -7,5 +7,5 @@ contact_links:
     url: https://github.com/fetchurl/spec
     about: Normative protocol behavior lives in fetchurl/spec (SPEC.md).
   - name: Security vulnerability
-    url: https://github.com/fetchurl/fetchurl/security/advisories/new
-    about: Do not open a public issue. Prefer private reporting on the affected repo (example uses the server repo); email lucas@lew.tec.br if needed.
+    url: https://github.com/fetchurl/.github/security/policy
+    about: Do not open a public issue. Read the org security policy — private report on the affected repo, or email lucas@lew.tec.br.
