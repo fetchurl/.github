@@ -13,11 +13,24 @@ In scope: the protocol, reference server/CLI, client SDKs, docs site, and relate
 
 Out of scope: third-party deployments of the server or forks you do not control; report those to the deployer.
 
+## Supported versions
+
+Security fixes are applied to **current** published lines, not historical tags by default:
+
+| Surface | What we treat as supported |
+|---------|----------------------------|
+| [spec](https://github.com/fetchurl/spec) | The protocol as described on the default branch (`SPEC.md`); versioning notes live in that repo’s changelog |
+| [fetchurl](https://github.com/fetchurl/fetchurl) (server/CLI) | Latest release tag and the default branch; container tags matching those releases on `ghcr.io/fetchurl/fetchurl` |
+| Client SDKs (`sdk-js`, `sdk-python`, `sdk-rust`, `sdk-java`) | Latest release of each package on the default publish channel, plus the default branch |
+| [docs site](https://github.com/fetchurl/fetchurl.github.io) | Content published at [fetchurl.github.io](https://fetchurl.github.io) |
+
+Older releases may not receive backports unless a fix is critical and practical. Say which version/commit you used when reporting.
+
 ## Reporting a vulnerability
 
 **Do not** open a public issue or pull request for security-sensitive findings.
 
-Prefer **GitHub private vulnerability reporting** on the repository that is most affected (Security tab → Report a vulnerability), when that feature is enabled.
+Prefer **GitHub private vulnerability reporting** on the **repository that is most affected** (that repo’s Security tab → Report a vulnerability), when that feature is enabled. Private reports are per repository — do not file an SDK or protocol issue against the server repo (or the reverse) just because one form is easier to find.
 
 If private reporting is unavailable, or you need a direct contact:
 
