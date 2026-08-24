@@ -12,12 +12,7 @@ fetchurl is a multi-repo project. Pick the channel that matches the kind of help
 
 ## Usage and protocol questions
 
-| Topic | Where |
-|-------|--------|
-| Protocol behavior, wire format, headers, env vars (`FETCHURL_SERVER`, etc.) | Issues on [fetchurl/spec](https://github.com/fetchurl/spec) |
-| Running the reference server or CLI | Issues on [fetchurl/fetchurl](https://github.com/fetchurl/fetchurl) |
-| Client / SDK integration | The relevant SDK: [sdk-js](https://github.com/fetchurl/sdk-js), [sdk-python](https://github.com/fetchurl/sdk-python), [sdk-rust](https://github.com/fetchurl/sdk-rust), [sdk-java](https://github.com/fetchurl/sdk-java) |
-| Docs site content | [fetchurl/fetchurl.github.io](https://github.com/fetchurl/fetchurl.github.io) |
+File questions on the repository that owns the surface. Use the same map as [Where to contribute](./CONTRIBUTING.md#where-to-contribute): protocol → [spec](https://github.com/fetchurl/spec), server/CLI → [fetchurl](https://github.com/fetchurl/fetchurl), clients → the matching `sdk-*` repo, docs site → [fetchurl.github.io](https://github.com/fetchurl/fetchurl.github.io).
 
 Include version or commit, environment, expected vs actual behavior, and minimal steps or logs when filing an issue.
 
